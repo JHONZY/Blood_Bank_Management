@@ -1,0 +1,19 @@
+html{
+  scroll-behavior: smooth;
+}
+
+#list li a:hover{
+  color: palevioletred !important;
+}
+
+
+#red {
+    list-style: none !important;
+  }
+  
+  #red li::before {
+    content: "•" !important;
+    color: red !important;
+    padding: 15px;
+    font-size: 20px;
+  }
