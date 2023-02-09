@@ -639,7 +639,7 @@ footer{
     .btn-x{
         position: absolute;
         top: 1.5rem;
-        right: 1.5rem;
+        right: 1rem;
         display: block;
         cursor: pointer;
         font-size: 1.5rem;
