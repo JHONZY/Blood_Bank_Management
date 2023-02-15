@@ -413,14 +413,23 @@
         });
         
         function con(blood, img){
-            if(blood > 80){
+            if(blood > 100){
+                $(img).attr("src", "bl100.PNG");
+            }
+            else if(blood > 80 && blood <= 100){
                 $(img).attr("src", "bl60.PNG");
             }
-            else if(blood > 40 && blood <= 80){
+            else if(blood > 60 && blood <= 80){
+                $(img).attr("src", "bl50.PNG");
+            }
+            else if(blood > 40 && blood <= 60){
                 $(img).attr("src", "bl40.PNG");
             }
-            else if(blood <= 40){
+            else if(blood > 20 && blood <= 40){
                 $(img).attr("src", "bl20.PNG");
+            }
+            else if(blood <= 20){
+                $(img).attr("src", "b10.PNG");
             }
         }
         function all(){
